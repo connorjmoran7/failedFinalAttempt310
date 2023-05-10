@@ -1,0 +1,32 @@
+public void addWhitePieces() {
+        add(new Rook(0, 7, true), 0, 7, 1, 1);
+        add(new Knight(1, 7, true), 1, 7, 1, 1);
+        add(new Bishop(2, 7, true), 2, 7, 1, 1);
+        add(new Queen(3, 7, true), 3, 7, 1, 1);
+        add(new King(4, 7, true), 4, 7, 1, 1);
+        add(new Bishop(5, 7, true), 5, 7, 1, 1);
+        add(new Knight(6, 7, true), 6, 7, 1, 1);
+        add(new Rook(7, 7, true), 7, 7, 1, 1);
+        for (int i = 0; i < 8; i++) {
+            add(new Pawn(i, 6, true), i, 6, 1, 1);
+        }
+    }
+
+    public void addBlackPieces() {
+        add(new Rook(0, 0, false), 0, 0, 1, 1);
+        add(new Knight(1, 0, false), 1, 0, 1, 1);
+        add(new Bishop(2, 0, false), 2, 0, 1, 1);
+        add(new Queen(3, 0, false), 3, 0, 1, 1);
+        add(new King(4, 0, false), 4, 0, 1, 1);
+        add(new Bishop(5, 0, false), 5, 0, 1, 1);
+        add(new Knight(6, 0, false), 6, 0, 1, 1);
+        add(new Rook(7, 0, false), 7, 0, 1, 1);
+        for (int i = 0; i < 8; i++) {
+            add(new Pawn(i, 1, false), i, 1, 1, 1);
+        }
+    }
+
+    public void populateBoard() {
+        addWhitePieces();
+        addBlackPieces();
+    }
